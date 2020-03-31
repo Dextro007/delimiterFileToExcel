@@ -11,6 +11,7 @@ def transformPath(path_str):
             path[i] = '/'
     path_str = "".join(path)
     return path_str
-s = input("Enter the string")
-path = r"{}".format(s)
-print(transformPath(path))
+def takePath():
+    s = input("Enter the string :  ")
+    path = r"{}".format(s)
+    transformPath(path)
