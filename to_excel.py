@@ -8,9 +8,12 @@ These parameters are:
 '''
 import pandas as pd
 import openpyxl
+import transform_path
 
 delimiter = ';'
-original_path = "D:/Required_Data/TessyResult.csv"
-destination_filePath = r"D:\Required_Data\TessyResults.xlsx"
-data = pd.read_csv(original_path, sep= delimiter)
-data.to_excel(destination_filePath, index= False, header= True)
+original_path = "D:/Required_Data/TessyFunctionReport.csv"
+destination_filePath ="D:\Required_Data\\TessyFunctionReport.xlsx"
+def toexcel(delimiter, original_path,destination_filePath):
+    data = pd.read_csv(original_path, sep= delimiter)
+    data.to_excel(destination_filePath, index= False, header= True)
+#toexcel(delimiter, original_path, destination_filePath)
