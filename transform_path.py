@@ -1,6 +1,3 @@
-import xlrd
-import pandas as pd
-
 #path = r"D:\Tessy Reports\FCA_332_BEV\NVM_1.30"
 #print(path.replace('\\', '/'))
 
